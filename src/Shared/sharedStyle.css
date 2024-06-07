@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'borned';
+    src: url("../assets/Borned-VG5mw.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logoContainer{
+    width: 100%;
+    max-width: 200px;   
+}
+
+.navLinkContainer{
+    /* gap: 13px; */
+}
+
+.logoImage{
+    width: 75%;   
+}
+
+
+.navLinkItem{
+    width: 100%;
+    overflow: hidden;
+    max-width: fit-content;
+    padding: 10px 10px;
+    transition: all 1s;
+    
+}
+
+.navLinkItem:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.navLink{
+    font-family: 'borned';   
+    font-size: 16px !important;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: white;
+    text-decoration: none;
+}
