@@ -4,9 +4,7 @@ import React from 'react'
 const Button = ({ Text }) => {
     return (
         <>
-            <div className="button btn-2">
-                <p>{Text}</p>
-            </div>
+            <button className="button">{Text}</button>
         </>
     )
 }

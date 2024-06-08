@@ -25,10 +25,9 @@
 }
 
 .introHeading {
-    font-family: "fonlog";
+    font-family: "fanlog";
     color: white;
     font-size: 11cqmax;
-    font-weight: 100 !important;
     text-transform: uppercase;
 }
 
@@ -67,6 +66,7 @@
     display: flex;
     min-height: 100vh;
     background-color: var(--backGrount);
+    flex-wrap: wrap;
 }
 
 
@@ -77,31 +77,33 @@
     position: relative;
 }
 
-.aboutRight{
+.aboutRight {
     width: 100%;
     display: flex;
+    max-width: 50%;
     justify-content: center;
     align-items: start;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .aboutVideo {
     width: 100%;
 }
 
-.aboutTitle{
+.aboutTitle {
     font-family: 'holios' !important;
 }
 
-.aboutHeading{
-    font-family: 'fonlog';
-    font-size: 50.877px;
-    background-image: linear-gradient(to bottom, #90EE90, #32CD32, #2E8B57, #556B2F, #006400);
+.aboutHeading {
+    font-family: 'borned';
+    font-size: 40px;
+    background-image: linear-gradient(90deg, #4bf6a6, #a3eea3d4, #4b8b2e, #babc4d, #e7d835);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 57px;
 }
 
-.bluryDiv1{
+.bluryDiv1 {
     position: absolute;
     bottom: 0%;
     background: #000;
@@ -110,7 +112,7 @@
     height: 131px;
 }
 
-.bluryDiv2{
+.bluryDiv2 {
     position: absolute;
     right: 0%;
     background: #000;
@@ -120,10 +122,81 @@
 }
 
 
-.aboutDescription{
+.aboutDescription {
     color: #d6d6de !important;
     font-size: 18px;
     text-align: start;
     line-height: 30.56px;
     font-weight: 500;
+}
+
+.realitySection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.realityTitle {
+    font-family: 'holios' !important;
+    color: white;
+}
+
+.stakeSection {
+    padding: 40px;
+    display: flex;
+}
+
+.realityHeading {
+    font-family: 'borned';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50.877px;
+    color: white;
+    text-align: center;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+
+.stakHeading {
+    margin-top: 100px;
+    font-family: 'borned';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50.877px;
+    color: white;
+    background-image: linear-gradient(90deg, #4bf6a6, #a3eea3d4, #4b8b2e, #babc4d, #e7d835);
+    line-height: 57px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stakeLeft {
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stakeRight {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex: 0 1 50%;
+}
+
+.subDesc {
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.subHeading{
+    font-family: 'futureEarth';
+    font-size: 20px;
+    color: white;
+    
+
 }

@@ -1,40 +1,64 @@
-:root{
-    --fontColor : #ffffff;
-    --backGrount : #000000;
-    --curve-size : .5em;
-    --buttonColor : linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-      );
- }
+:root {
+    --fontColor: #ffffff;
+    --backGrount: #000000;
+    --curve-size: .5em;
+    --buttonColor: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+}
 
- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
- .paraFont{
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.paraFont {
     font-family: "Manrope", sans-serif !important;
-  font-weight: 500;
-  font-style: normal;
- }
+    font-weight: 500;
+    font-style: normal;
+}
+
+.headingFont{
+    font-family: "Metamorphous", serif;
+    font-weight: 800;
+}
+
 
 @font-face {
     font-family: "holios";
     src: url('./assets/holios.ttf') format('truetype');
+    font-weight: 500 !important;
 
 }
 
 @font-face {
-    font-family: 'fonlog';
-    src: url("./assets/FONLOG.ttf");
+    font-family: 'fanlog';
+    src: url("./assets/FONLOG.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 200;
+
 }
 
-header nav{
+@font-face {
+    font-family: "kayak";
+    src: url('./assets/Kayak.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'borned';
+    src: url('./assets/Borned-VG5mw.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'futureEarth';
+    src: url('./assets/future-earth.ttf') format('truetype');
+}
+
+header nav {
     width: 100%;
     height: 81px;
     background-color: var(--backGrount);
@@ -44,23 +68,91 @@ header nav{
     padding: 20px 30px;
 }
 
-
 .button {
+    --border-color: linear-gradient(-45deg, #21f012, #03a5aa, #006eff);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #e9ffff;
+    color: var(--color);
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
     width: 100%;
     max-width: 250px;
     height: 51px;
-    line-height: 50px;
-    text-align: center;
-    border: 2px solid var(--buttonColor);
-    margin: 30px 0;
-    position: relative;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
-    transition: all 1s ease;
-    overflow: hidden;
-    background: white;
-  }
-  
-  
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(0% var(--curve-size),
+            var(--curve-size) 0,
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+            calc(100% - var(--curve-size)) 100%,
+            0 100%);
+    transition: color 250ms;
+    font-family: "kayak" !important;
+}
 
+.button::after,
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.button::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+}
+
+@keyframes move-bg7234 {
+    0% {
+        background-position: 31% 0%;
+    }
+
+    50% {
+        background-position: 70% 100%;
+    }
+
+    100% {
+        background-position: 31% 0%;
+    }
+}
+
+.button::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+            calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+}
+
+.button:where(:hover, :focus)::after {
+    clip-path: polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+    transition: 200ms;
+}
+
+.button:where(:hover, :focus) {
+    color: #fff;
+}
+
+.appContainer {
+    width: 100%;
+    background-color: black;
+}
