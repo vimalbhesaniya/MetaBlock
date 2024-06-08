@@ -1,6 +1,6 @@
 import React from 'react'
 import "./sharedStyle.css"
-import logoImage from "../assets/finalLogo.png"
+import logoImage from "../assets/logo.png"
 import { Link } from 'react-router-dom'
 
 

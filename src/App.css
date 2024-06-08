@@ -9,6 +9,7 @@
 .font{
     font-family: "Manrope", sans-serif !important;
     font-optical-sizing: auto !important;
-    font-weight: 500 !important;
+
     font-style: normal !important;
+    color: white;
 }

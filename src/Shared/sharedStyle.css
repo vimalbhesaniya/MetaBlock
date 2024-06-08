@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'borned';
     src: url("../assets/Borned-VG5mw.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
 }
 
 .logoContainer{
