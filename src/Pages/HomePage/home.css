@@ -190,13 +190,81 @@
 .subDesc {
     font-size: 16px;
     line-height: 24px;
-    
+
 }
 
-.subHeading{
+.subHeading {
     font-family: 'futureEarth';
     font-size: 20px;
     color: white;
-    
+
 
 }
+
+.roadMapContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.phase1 {
+    display: flex;
+    gap: 250px;    
+    height: 134px;
+
+}
+
+.costomMargin{
+    margin-top: 70px;
+}
+
+.phaseLeft {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.phaseRight {
+    width: 100%;
+    max-width: 350px;
+}
+
+.percentageLeft {
+    font-size: 48px;
+    color: white;
+    background: linear-gradient(-270deg, #deb0fd, #839bfc 56.66%, #92dbff 103.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.percentageRight {
+    font-size: 48px;
+    color: white;
+    background: linear-gradient(270deg, #b0eafd, #c783fc 56.66%, #f9fb32 103.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutPhase {
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    font-style: normal;
+    width: 100%;
+}
+
+.paseTitle {
+    font-family: 'borned';
+    
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+    width: 100%;
+    line-height: 24px;
+}
+
+.mapContainer {}
