@@ -88,69 +88,14 @@ const Home = () => {
             </section>
 
             <section className='roadMapContainer appContainer'>
-                <div className='mapContainer'>
-                    <div className='phase1 costomMargin'>
-                        <div className='phaseLeft'>
-                            <p className='percentageLeft'>10%</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <h1 className='paseTitle '>PHASE1</h1>
-                            <p className='aboutPhase'>Empowering Tokenization with Seamless Web 3 Connectivity</p>
-                        </div>
-                    </div>
-                    <div className='phase1'>
-                        <div className='phaseLeft'>
-                            <h1 className='paseTitle'>PHASE2</h1>
-                            <p className='aboutPhase text-right'>Secure, Stake, and Earn: Powering Your Metaverse Journey.</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <p className='percentageRight'>30%</p>
-                            
-                        </div>
-                    </div>
-                    <div className='phase1'>
-                        <div className='phaseLeft'>
-                            <p className='percentageLeft'>50%</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <h1 className='paseTitle '>PHASE3</h1>
-                            <p className='aboutPhase'>Step into the Future: AR/VR Casino Gaming Redefined.</p>
-                        </div>
-                    </div>
-                    <div className='phase1'>
-                        <div className='phaseLeft'>
-                            <h1 className='paseTitle'>PHASE4</h1>
-                            <p className='aboutPhase text-right'>Crafting Boundless Worlds: Your Complete Metaverse Game Ecosystem Awaits</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <p className='percentageRight'>65%</p>
-                            
-                        </div>
-                    </div>
-                    <div className='phase1 '>
-                        <div className='phaseLeft'>
-                            <p className='percentageLeft'>80%</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <h1 className='paseTitle '>PHASE5</h1>
-                            <p className='aboutPhase'>In house blockchain for HoriXverse</p>
-                        </div>
-                    </div>
-                    <div className='phase1'>
-                        <div className='phaseLeft'>
-                            <h1 className='paseTitle'>PHASE6</h1>
-                            <p className='aboutPhase text-right'>Coming soon on metaverse markets like metastore</p>
-                        </div>
-                        <div className='phaseRight'>
-                            <p className='percentageRight'>100%</p>
-                            
-                        </div>
-                    </div>
-                </div>
+                
+                    <h1 className='roadMapHeading text-center'>Our RoadMap</h1>
                     <RoadMap />
+
+                
             </section>
 
-        </>
+        </>     
     )
 }
 

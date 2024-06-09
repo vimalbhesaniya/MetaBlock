@@ -22,7 +22,7 @@
     font-style: normal;
 }
 
-.headingFont{
+.headingFont {
     font-family: "Metamorphous", serif;
     font-weight: 800;
 }
@@ -156,3 +156,18 @@ header nav {
     width: 100%;
     background-color: black;
 }
+
+.slick-next:before {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.slick-prev:before {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+

@@ -1,7 +1,122 @@
-.timeLineImage{
+.timeLineImage {
     width: 100%;
     max-width: 100px;
     height: 100%;
     vertical-align: middle;
     position: absolute;
 }
+
+.customeBg {
+    background: linear-gradient(rgb(223, 255, 15), rgba(81, 255, 90, 0.378));
+
+    width: 300px;
+    background-repeat: no-repeat;
+    color: white;
+    height: 200px;
+    border-radius: 5px;
+    transition: all 0.7s;
+    cursor: pointer;
+    transform: scale(100%);
+}
+
+.customeBg:hover {
+    background-position: 0 0px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.127));
+    scale: 100%;
+    z-index: 1231232;
+    position: relative;
+    color: black;
+}
+
+.phaseLine {
+    width: 2px;
+    height: 80px;
+    background-color: white;
+}
+
+.phaseLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 1045;
+    left: 30px;
+
+}
+
+.phaseYear {
+    color: white;
+}
+
+.mainPhaseContainer {
+    position: relative;
+    margin-top: 30px !important;
+}
+
+.roundPhaseIcon {
+    width: 100%;
+    max-width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(58, 58, 58, 0.506);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerRound {
+    width: 100%;
+    max-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(black, purple);
+}
+
+.roundPng {
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerFluid{
+    width: 100%;   
+}
+
+.buttonContainerForPhases{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    border: none;
+    outline: none;
+    gap: 10px;
+}
+
+.sliderHandler{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:1000;
+    background: linear-gradient(green , yellow);
+    border: none;
+    outline: none !important;
+}
+
+
