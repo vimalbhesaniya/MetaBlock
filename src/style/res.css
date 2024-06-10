@@ -1,12 +1,19 @@
 @media (max-width : 786px) {
-    .navLinkContainer{
+    .NavBar{
         display: none !important;
     } 
-    .burgerIconContainer{
+    .resNavbar{
         display: block;
     }
     .responsiveSidebar{
         display: flex;
+    }
+
+    .productContainer {
+        padding: 20px 50px ;
+    }
+    .introHeading{
+        font-size: 20px;
     }
 }
 
@@ -34,8 +41,9 @@
     }  
 }
 @media (max-width : 1050px) {
-    .aboutLeft , .aboutRight  ,.stakeLeft , .stakeRight{
-        flex: 0 1 100%;
+    .aboutLeft , .aboutRight  ,.stakeLeft , .stakeRight  ,stakeLeft{
+        flex: 0 1 100% !important;
+        width: 100%;
         max-width: 100%;
         text-align: center;
         align-items: center;

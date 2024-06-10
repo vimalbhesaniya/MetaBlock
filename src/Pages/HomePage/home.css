@@ -25,7 +25,7 @@
 }
 
 .introHeading {
-    font-family: "fanlog";
+    font-family: "borned";
     color: white;
     font-size: 11cqmax;
     text-transform: uppercase;
@@ -67,6 +67,8 @@
     min-height: 100vh;
     background-color: var(--backGrount);
     flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -146,6 +148,7 @@
 .stakeSection {
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .realityHeading {
@@ -176,6 +179,7 @@
 .stakeLeft {
     display: flex;
     flex: 0 1 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -203,7 +207,7 @@
 
 .roadMapContainer {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,4 +277,12 @@
 .roadMapHeading{
     font-family: 'borned' !important;
     color: white;
+}
+
+.productContainer{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
 }
