@@ -15,6 +15,10 @@
             --animate-duration: 4s !important;
 }
 
+video::-webkit-media-controls {
+    display:none !important;
+}
+
 #root {
     background-color: black;
     overflow: hidden;
