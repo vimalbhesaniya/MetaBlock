@@ -91,7 +91,7 @@ const Home = () => {
                 >
                     <source src="Videos/crypto.mp4" type="video/mp4" />
                 </video>
-                <div className="bluryDiv1"></div>
+                <div className="bluryDiv1" style={{backdropFilter: `blur(15px)`}}></div>
             </section>
 
             <section className="aboutSection ">
