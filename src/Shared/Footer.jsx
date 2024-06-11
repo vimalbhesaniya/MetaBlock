@@ -7,7 +7,7 @@ import { Handler , Navigater} from "../App";
 
 const Footer = () => {
     const handler = useContext(Handler)
-    const [s1] = useContext(Navigater)
+    const [s1 , s2 ,s3 , s4  ,s5] = useContext(Navigater)
     return (
         <div className="footer-bg-clr" >
             <div className="footer-space">
@@ -40,16 +40,16 @@ const Footer = () => {
                             <h5>Quick Links</h5>
                             <ul>
                                 <li>
-                                    <Link>About</Link>
+                                    <Link onClick={()=> handler(s1)}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link>Roadmap</Link>
+                                    <Link onClick={()=> handler(s5)}>Features</Link>
                                 </li>
                                 <li>
-                                    <Link>Tokenomics</Link>
+                                    <Link onClick={()=> handler(s3)}>RoadMap</Link>
                                 </li>
                                 <li>
-                                    <Link>Whitepaper</Link>
+                                    <Link onClick={()=> handler(s4)}>Contact</Link>
                                 </li>
                             </ul>
                         </div>
