@@ -17,6 +17,7 @@
 
 #root {
     background-color: black;
+    overflow: hidden;
 }
 
 .delay1{
