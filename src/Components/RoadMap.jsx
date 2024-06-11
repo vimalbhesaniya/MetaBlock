@@ -64,13 +64,13 @@ const RoadMap = () => {
 
     return (
         <>
-            <div className='containerFluid pt-5'>
+            <div className='containerFluid pt-5' >
                 <div className='buttonContainerForPhases'>
                     <button className='sliderHandler' onClick={() => sliderRef?.slickPrev()}>
-                        <i class="fa-solid fa-angles-left"></i>
+                        <i className="fa-solid fa-angles-left"></i>
                     </button>
                     <button className='sliderHandler' onClick={() => sliderRef?.slickNext()}>
-                        <i class="fa-solid fa-angles-right"></i>
+                        <i className="fa-solid fa-angles-right"></i>
                     </button>
                 </div>
                 <div className="mt-5 mainPhaseContainer">
@@ -84,11 +84,11 @@ const RoadMap = () => {
                                             <div className='phaseLine'></div>
                                             <div className='roundPhaseIcon'> <div className='innerRound'></div> </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card__border"></div>
-                                            <div class="card_title__container">
-                                                <h1 class="card_title">{name}</h1>
-                                                <p class="card_paragraph">
+                                        <div className="card">
+                                            <div className="card__border"></div>
+                                            <div className="card_title__container">
+                                                <h1 className="card_title">{name}</h1>
+                                                <p className="card_paragraph">
                                                     {review}
                                                 </p>
                                             </div>

@@ -717,7 +717,7 @@ const Home = () => {
             </section>
             <section className="roadMapContainer appContainer" ref={s3} id='roadmap'>
                 <h1 className="roadMapHeading text-center">Our RoadMap</h1>
-                <RoadMap />
+                <RoadMap key={'roadMap'} />
             </section>
             <section className="chartContainer appContainer">
                 <h1 className="roadMapHeading text-center">TOKENOMICS</h1>

@@ -62,13 +62,10 @@ const PartNers = () => {
         <>
             <div className='container-fluid pt-5'>
                     <Slider {...sliderSettings} ref={setSliderRef}>
-                        {data.map((img) => (
-                            <>
-                                    <div className='cardMainContainer h-100'>
+                        {data.map((img , i) => (
+                                    <div key={i}  className='cardMainContainer h-100'>
                                         <img src={img} className='img-fluid' alt="" />
                                     </div>
-                                
-                            </>
                         ))}
                     </Slider>
                 

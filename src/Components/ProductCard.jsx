@@ -44,8 +44,7 @@ const ProductCard = () => {
         <>
             {cardData?.map((val, ind) => {
                 return (
-                    
-                        <div className="card-box">
+                        <div key={ind} className="card-box">
                             <img alt="" className="img-fluid d-block card-img-top" src={val.img}></img>
                             <div className="card-body-box">
                                 <h5>{val.title}</h5>
