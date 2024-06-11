@@ -32,10 +32,17 @@
     .contentContainer{
         gap: 20px;
     }
+    
 }
 
 @media (max-width : 400px) {
     .introHeading{
+        font-size: 40px;
+    }
+    .realityHeading {
+        font-size: 40px;
+    }
+    .roadMapHeading{
         font-size: 40px;
     }
 }

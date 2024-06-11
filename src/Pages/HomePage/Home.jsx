@@ -68,8 +68,8 @@ const Home = () => {
                 <div className="contentContainer">
                     <h4 className="introTitle" data-aos="zoom-in-up">INTRODUCING</h4>
                     <h1 className="introHeading" data-aos='zoom-in-up'>MetaBlock</h1>
-                    <p className="introDescription ">
-                        "Horixon " is an expansive gaming metaverse that
+                    <p className="introDescription">
+                        "Horixon" is an expansive gaming metaverse that
                         seamlessly integrates augmented reality (AR), virtual
                         reality (VR), and artificial intelligence (AI) to create
                         a dynamic and interconnected gaming experience. This

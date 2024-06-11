@@ -29,7 +29,7 @@
 .introHeading {
     font-family: "borned";
     color: white;
-    font-size: 11cqmax;
+    font-size: 149px;
     text-transform: uppercase;
 }
 
@@ -51,6 +51,7 @@
     text-align: center;
     font-size: 21px;
     font-style: normal;
+    width: 70%;
     font-weight: 400;
     line-height: normal;
 }
