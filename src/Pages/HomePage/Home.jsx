@@ -88,6 +88,7 @@ const Home = () => {
                     autoPlay
                     loop
                     muted
+                    controls={false}
                     className="introductionVideo"
                 >
                     <source src="Videos/crypto.mp4" type="video/mp4" />
@@ -104,6 +105,7 @@ const Home = () => {
                         autoPlay
                         loop
                         muted
+                        controls={false}
                         className="aboutVideo"
                     >
                         <source
