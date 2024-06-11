@@ -149,6 +149,8 @@
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
 }
 
 .realityHeading {
@@ -198,11 +200,9 @@
 }
 
 .subHeading {
-    font-family: 'futureEarth';
+    font-family: 'borned';
     font-size: 20px;
     color: white;
-
-
 }
 
 .roadMapContainer {
