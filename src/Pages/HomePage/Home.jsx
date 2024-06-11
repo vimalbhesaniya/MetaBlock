@@ -9,29 +9,23 @@ import ProductCard from "../../Components/ProductCard";
 import PartNers from "../../Components/PartNers";
 import { Navigater } from "../../App";
 import useIntersectionObserver from "../../Hooks/useIntersectionObserver";
-
+import Card from "../../Components/Card";
+import one from "../../Components/Images/onee.png"
+import oneFlip from "../../Components/Images/oneFlip.png"
+import two from "../../Components/Images/two.png"
+import twoFlip from "../../Components/Images/twoFlip.png"
+import three from "../../Components/Images/three.png"
+import threeFlip from "../../Components/Images/threeFlip.webp"
+import four from "../../Components/Images/four.webp"
+import fourFlip from "../../Components/Images/fourFlip.png"
+import five from "../../Components/Images/five.png"
+import fiveFlip from "../../Components/Images/fiveFlip.png"
+import AOS from "aos"
 const Home = () => {
     const [s1, s2, s3, s4, s5] = useContext(Navigater);
-    const [first, isVisible1] = useIntersectionObserver({
-        threshold: 0.1,
-    });
-    const [second, isVisible2] = useIntersectionObserver({
-        threshold: 0.1,
-    });
-    const [third, isVisible3] = useIntersectionObserver({
-        threshold: 0.2,
-    });
-    const [fourth, isVisible4] = useIntersectionObserver({
-        threshold: 0.1,
-    });
-    const [ref1, isVisible_1] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref2, isVisible_2] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref3, isVisible_3] = useIntersectionObserver({ threshold: 0.2 });
-    const [ref4, isVisible_4] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref5, isVisible_5] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref6, isVisible_6] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref7, isVisible_7] = useIntersectionObserver({ threshold: 0.1 });
-    const [ref8, isVisible_8] = useIntersectionObserver({ threshold: 0.1 });
+    useEffect(()=>{
+        AOS.init({duration:2000});
+    } , [])
     return (
         <>
             <section ref={s1} className="introSection">
@@ -63,7 +57,7 @@ const Home = () => {
                 </video>
             </section>
 
-            <section className="aboutSection " ref={first}>
+            <section className="aboutSection ">
                 <div className="aboutLeft">
                     <div className="bluryDiv1"></div>
                     <div className="bluryDiv2"></div>
@@ -80,8 +74,8 @@ const Home = () => {
                         />
                     </video>
                 </div>
-                {isVisible1 && (
-                    <div className="aboutRight animate__animated  animate__fadeInRight">
+                {(
+                    <div className="aboutRight">
                         <p className="font aboutTitle">MetaBlock</p>
                         <h1 className="aboutHeading mt-3">
                             Revolutionizes Arbitrage With Decentralized Flash
@@ -104,125 +98,138 @@ const Home = () => {
                 )}
             </section>
 
-            <section className="realitySection appContainer" ref={second}>
-                {isVisible2 && (
+            <section className="realitySection appContainer">
+                {(
                     <>
-                        <p className="realityTitle animate__animated animate__zoomIn">
+                        <p className="realityTitle" data-aos='zoom-in-up'>
                             ENDLESS REALITY
                         </p>
-                        <p className="realityHeading animate__animated animate__zoomIn">
+                        <p className="realityHeading" data-aos='zoom-in-up'>
                             ECOSYSTEM
                         </p>
                     </>
                 )}
             </section>
-            <section className="appContainer stakeSection" ref={s2}>
+            <section className="appContainer stakeSection">
                 <div className="position-relative stakeLeft">
                     <img src={cryptoImage} className="img-fluid w-100" alt="" />
                     <div className="bluryDiv1"></div>
                 </div>
-                <div className="stakeRight">
-                    <h1 className="stakHeading">Staking</h1>
+                <div className="stakeRight" >
+                    <h1 className="stakHeading" data-aos="fade-left">Staking</h1>
 
-                    <div ref={ref1}>
-                        {isVisible_1 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Alien Auras
                                 </h3>
-                                <p className="paraFont subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Alien Auras is the dynamic world of cryptocurrency. Its futuristic design
-                                    captures the essence of digital innovation and technological advancement for
-                                    crypto-related projects seeking a bold and forward-thinking aesthetic.
+                                <p className="paraFont subDesc" data-aos="fade-left">
+                                    Alien Auras is the dynamic world of
+                                    cryptocurrency. Its futuristic design
+                                    captures the essence of digital innovation
+                                    and technological advancement for
+                                    crypto-related projects seeking a bold and
+                                    forward-thinking aesthetic.
                                 </p>
                             </>
                         )}
                     </div>
 
-                    <div ref={ref2}>
-                        {isVisible_2 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Flash Loan Arbitrage Bot
                                 </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Leverage Flash Loan Arbitrage Bot for rapid and lucrative trading by exploiting price variations
-                                    across decentralized finance platforms.
+                                <p className="font subDesc" data-aos="fade-left" >
+                                    Leverage Flash Loan Arbitrage Bot for rapid
+                                    and lucrative trading by exploiting price
+                                    variations across decentralized finance
+                                    platforms.
                                 </p>
                             </>
                         )}
                     </div>
 
-                    <div ref={ref3}>
-                        {isVisible_3 && (
-                            <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
-                                    NFT Staking
-                                </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Engage in NFT Staking to earn passive income and unlock rewards, enhancing the value and utility of
-                                    your digital assets within the blockchain ecosystem.
-                                </p>
-                            </>
-                        )}
+                    <div>
+                        <>
+                            <h3 className="subHeading" data-aos="fade-left">
+                                NFT Staking
+                            </h3>
+                            <p className="font subDesc" data-aos="fade-left">
+                                Engage in NFT Staking to earn passive income
+                                and unlock rewards, enhancing the value and
+                                utility of your digital assets within the
+                                blockchain ecosystem.
+                            </p>
+                        </>
                     </div>
 
-                    <div ref={ref4}>
-                        {isVisible_4 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Aura Finance
                                 </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Access Aura Finance for comprehensive financial solutions, including lending, borrowing, and yield
-                                    farming, facilitated by cutting-edge blockchain technology.
+                                <p className="font subDesc" data-aos="fade-left">
+                                    Access Aura Finance for comprehensive
+                                    financial solutions, including lending,
+                                    borrowing, and yield farming, facilitated by
+                                    cutting-edge blockchain technology.
                                 </p>
                             </>
                         )}
                     </div>
 
-                    <div ref={ref5}>
-                        {isVisible_5 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading">
                                     Aura Wallet
                                 </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Securely manage your cryptocurrency assets with Aura Wallet, offering a user-friendly interface and
-                                    advanced security features for convenient storage and transactions.
+                                <p className="font subDesc">
+                                    Securely manage your cryptocurrency assets
+                                    with Aura Wallet, offering a user-friendly
+                                    interface and advanced security features for
+                                    convenient storage and transactions.
                                 </p>
                             </>
                         )}
                     </div>
 
-                    <div ref={ref6}>
-                        {isVisible_6 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading">
                                     Alien Aura Battle Game
                                 </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Experience thrilling gameplay in the Alien Aura Battle Game, where players engage in strategic
-                                    battles and earn rewards using blockchain technology.
+                                <p className="font subDesc">
+                                    Experience thrilling gameplay in the Alien
+                                    Aura Battle Game, where players engage in
+                                    strategic battles and earn rewards using
+                                    blockchain technology.
                                 </p>
                             </>
                         )}
                     </div>
 
-                    <div ref={ref7}>
-                        {isVisible_7 && (
+                    <div>
+                        {(
                             <>
-                                <h3 className="subHeading animate__animated animate__fadeInRight animate__delay-1s">
+                                <h3 className="subHeading">
                                     Aura Chain
                                 </h3>
-                                <p className="font subDesc animate__delay-2s animate__animated animate__fadeInRight">
-                                    Discover Aura Chain, a high-performance blockchain network designed for scalability, security, and
-                                    interoperability, enabling seamless transactions and decentralized applications.
+                                <p className="font subDesc">
+                                    Discover Aura Chain, a high-performance
+                                    blockchain network designed for scalability,
+                                    security, and interoperability, enabling
+                                    seamless transactions and decentralized
+                                    applications.
                                 </p>
                             </>
                         )}
                     </div>
-
                 </div>
             </section>
             <section
@@ -241,9 +248,47 @@ const Home = () => {
                 <h1 className="roadMapHeading text-center my-5">
                     Latest Blogs
                 </h1>
-
+                <p className="paraFont text-center">
+                    Explore the limitless possibilities of the metaverse and
+                    dive into the exciting world of cryptocurrency with our
+                    latest <br /> blog posts. Stay updated on the latest trends,
+                    insights, and innovations in these rapidly evolving realms.
+                </p>
                 <div className="productContainer flex-wrap my-5 gap-3">
                     <ProductCard></ProductCard>
+                </div>
+            </section>
+
+            <section className="featuresContainer appContainer">
+                <div className="featureLeft">
+                    <Card customClass={"card3d"}
+                        FrontPath={one}
+                        BackPath={oneFlip}
+                    />
+                    <Card
+                        customClass={'card3d'}
+                        FrontPath={two}
+                        BackPath={twoFlip}
+                    />
+                </div>
+                <div className="featureCenter">
+                    <Card
+                        customClass={"card3dcenter"}
+                        FrontPath={three}
+                        BackPath={threeFlip}
+                    />
+                </div>
+                <div className="featureRight">
+                    <Card
+                        customClass={"card3d"}
+                        FrontPath={four}
+                        BackPath={fourFlip}
+                    />
+                    <Card
+                        customClass={"card3d"}
+                        FrontPath={five}
+                        BackPath={fiveFlip}
+                    />
                 </div>
             </section>
             <section className="roadMapContainer appContainer" ref={s4}>

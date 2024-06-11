@@ -217,12 +217,12 @@
 
 .phase1 {
     display: flex;
-    gap: 250px;    
+    gap: 250px;
     height: 134px;
 
 }
 
-.costomMargin{
+.costomMargin {
     margin-top: 70px;
 }
 
@@ -274,15 +274,37 @@
 
 
 
-.roadMapHeading{
+.roadMapHeading {
     font-family: 'borned' !important;
     color: white;
 }
 
-.productContainer{
+.productContainer {
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
     padding: 20px 100px;
+}
+
+.featuresContainer {
+    width: 100%;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.featureLeft {
+    width: 100%;
+}
+
+.featureCenter {
+    display: flex;
+    width: 100%;
+    
+    height: 100%;
+}
+
+.featureRight {
+    width: 100%;
 }

@@ -44,9 +44,9 @@
     left: 50px;
 }
 
-.cardMainContainer{
+.cardMainContainer {
     width: 100%;
-    max-width:19rem;
+    max-width: 19rem;
     height: 400px;
     position: relative;
     display: flex;
@@ -99,20 +99,20 @@
     object-fit: cover;
 }
 
-.containerFluid{
-    width: 100%;   
+.containerFluid {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.adjustCards{
+.adjustCards {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttonContainerForPhases{
+.buttonContainerForPhases {
     display: flex;
     justify-content: end;
     width: 100%;
@@ -122,7 +122,7 @@
     gap: 10px;
 }
 
-.sliderHandler{
+.sliderHandler {
     width: 100%;
     max-width: 40px;
     height: 40px;
@@ -131,8 +131,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight:1000;
-    background: linear-gradient(green , yellow);
+    font-weight: 1000;
+    background: linear-gradient(green, yellow);
     border: none;
     outline: none !important;
 }
@@ -145,36 +145,34 @@
     --paragraph: hsl(0, 0%, 83%);
     --line: hsl(240, 9%, 17%);
     --primary: hsl(266, 92%, 58%);
-  
+
     position: relative;
     display: flex;
     flex-direction: column;
-    
-    
+
+
     gap: 1rem;
     padding: 2rem 1rem;
     width: 19rem;
     height: 300px;
     background-color: hsla(240, 15%, 9%, 1);
-    background-image: radial-gradient(
-        at 88% 40%,
-        hsla(240, 15%, 9%, 1) 0px,
-        transparent 85%
-      ),
-      radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-      radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-      radial-gradient(at 0% 64%, rgb(62, 247, 38) 0px, transparent 85%),
-      radial-gradient(at 41% 94%, rgb(233, 255, 173) 0px, transparent 85%),
-      radial-gradient(at 100% 99%, rgb(237, 255, 36) 0px, transparent 85%);
-  
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, rgb(62, 247, 38) 0px, transparent 85%),
+        radial-gradient(at 41% 94%, rgb(233, 255, 173) 0px, transparent 85%),
+        radial-gradient(at 100% 99%, rgb(237, 255, 36) 0px, transparent 85%);
+
     border-radius: 1rem;
     box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
-  }
-  
-  .card .card__border {
+}
+
+.card .card__border {
     overflow: hidden;
     pointer-events: none;
-  
+
     position: absolute;
     z-index: -10;
     top: 50%;
@@ -182,128 +180,248 @@
     transform: translate(-50%, -50%);
     width: calc(100% + 2px);
     height: calc(100% + 2px);
-    background-image: linear-gradient(
-      0deg,
-      hsl(0, 0%, 100%) -50%,
-      hsl(0, 0%, 40%) 100%
-    );
-  
+    background-image: linear-gradient(0deg,
+            hsl(0, 0%, 100%) -50%,
+            hsl(0, 0%, 40%) 100%);
+
     border-radius: 1rem;
-  }
-  
-  .card .card__border::before {
+}
+
+.card .card__border::before {
     content: "";
     pointer-events: none;
-  
+
     position: fixed;
     z-index: 200;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%), rotate(0deg);
     transform-origin: left;
-  
+
     width: 200%;
     height: 10rem;
-    background-image: linear-gradient(
-      0deg,
-      hsla(0, 0%, 100%, 0) 0%,
-      hsl(114, 95%, 60%) 40%,
-      hsl(58, 95%, 60%) 60%,
-      hsla(0, 0%, 40%, 0) 100%
-    );
-  
+    background-image: linear-gradient(0deg,
+            hsla(0, 0%, 100%, 0) 0%,
+            hsl(114, 95%, 60%) 40%,
+            hsl(58, 95%, 60%) 60%,
+            hsla(0, 0%, 40%, 0) 100%);
+
     animation: rotate 8s linear infinite;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .card .card_title__container{
+}
+
+.card .card_title__container {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    align-items: end;    
+    align-items: end;
     height: 100%;
-  }
+}
 
-  .card .card_title__container .card_title {
+.card .card_title__container .card_title {
     font-size: 1.5rem;
     color: var(--white);
     text-align: left;
     font-family: "canavar";
-  }
-  
-  .card .card_title__container .card_paragraph {
+}
+
+.card .card_title__container .card_paragraph {
     margin-top: 0.25rem;
     font-size: 1rem;
     color: var(--paragraph);
     text-align: right;
     font-family: 'unispace';
-  }
-  
-  .card .line {
+}
+
+.card .line {
     width: 100%;
     height: 0.1rem;
     background-color: var(--line);
-  
+
     border: none;
-  }
-  
-  .card .card__list {
+}
+
+.card .card__list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  }
-  
-  .card .card__list .card__list_item {
+}
+
+.card .card__list .card__list_item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .card .card__list .card__list_item .check {
+}
+
+.card .card__list .card__list_item .check {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     width: 1rem;
     height: 1rem;
     background-color: var(--primary);
-  
+
     border-radius: 50%;
-  }
-  
-  .card .card__list .card__list_item .check .check_svg {
+}
+
+.card .card__list .card__list_item .check .check_svg {
     width: 0.75rem;
     height: 0.75rem;
-  
+
     fill: var(--black);
-  }
-  
-  .card .card__list .card__list_item .list_text {
+}
+
+.card .card__list .card__list_item .list_text {
     font-size: 0.75rem;
     color: var(--white);
-  }
-  
-  .card .button {
+}
+
+.card .button {
     cursor: pointer;
-  
+
     padding: 0.5rem;
     width: 100%;
-    background-image: linear-gradient(
-      0deg,
-      rgba(94, 58, 238, 1) 0%,
-      rgba(197, 107, 240, 1) 100%
-    );
-  
+    background-image: linear-gradient(0deg,
+            rgba(94, 58, 238, 1) 0%,
+            rgba(197, 107, 240, 1) 100%);
+
     font-size: 0.75rem;
     color: var(--white);
-  
+
     border: 0;
     border-radius: 9999px;
     box-shadow: inset 0 -2px 25px -4px var(--white);
-  }
-  
+}
+
+
+
+
+.parent {
+    width: 100%;
+    padding: 20px;
+    perspective: 1000px;
+}
+
+.card3d {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+}
+
+.card3dcenter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+}
+
+.card3dLeftBottom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+}
+
+
+
+.card3dLeftBottom:hover,
+.card3dcenter:hover,
+.card3d:hover {
+    transform: rotateY(180deg);
+}
+
+.content-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.9s ease-in-out;
+}
+
+.front {
+    width: 100%;
+    transform: rotateY(0deg);
+    background-size: cover !important;
+    display: flex;
+    align-items: end;
+    padding-left: 30px;
+    background-repeat: no-repeat !important;
+    background: transparent;
+    }
+    
+    .back {
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    background: transparent;
+    transform-style: preserve-3d;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.content-box .card-title {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.content-box .card-content {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f2f2f2;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 30px);
+}
+
+.content-box .see-more {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding: 0.5rem 0.7rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.content-box .card-title:hover,
+.content-box .card-content:hover,
+.content-box .see-more:hover {
+    transform: translate3d(0px, 0px, 60px);
+}
+
+.date-box {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 100%;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+.fronPara {
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    transform: translate3d(0px, 0px, 100px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
