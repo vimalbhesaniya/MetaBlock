@@ -31,6 +31,7 @@ import svg7 from "../../Components/SVG/7.png"
 import svg8 from "../../Components/SVG/8.svg"
 import svg9 from "../../Components/SVG/9.png"
 import svg10 from "../../Components/SVG/10.png"
+import gif from "../../Components/SVG/gif.gif"
 
 const Home = () => {
     const [s1, s2, s3, s4, s5] = useContext(Navigater);
@@ -81,6 +82,7 @@ const Home = () => {
                         <Button Text={"STAKE"} />
                     </div>
                 </div>
+                
                 <video
                     width="600"
                     autoPlay
