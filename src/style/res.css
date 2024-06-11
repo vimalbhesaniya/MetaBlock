@@ -13,10 +13,10 @@
         padding: 20px 0px ;
     }
     .introHeading{
-        font-size: 35px;
+        font-size: 55px;
     }
     .introTitle{
-        font-size: 20px;
+        font-size: 22px;
     }
     .card3dcenter{
         height: 400px;
@@ -26,9 +26,19 @@
     }
     .introDescription{
         width: 95%;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .contentContainer{
+        gap: 20px;
     }
 }
 
+@media (max-width : 400px) {
+    .introHeading{
+        font-size: 40px;
+    }
+}
 
 @media (min-width : 1300px) {
     .containerFluid{

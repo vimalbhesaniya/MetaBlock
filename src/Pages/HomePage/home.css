@@ -4,6 +4,8 @@
     background-color: var(--backGrount);
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -45,12 +47,12 @@
 
 
 .introDescription {
+    color: #fff;
     text-align: center;
-    width: 65%;
-    color: white;
     font-size: 21px;
-    line-height: 29px;
-    font-weight: 200;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .buttonContainer {
