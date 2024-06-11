@@ -50,16 +50,15 @@
     color: white;
     font-size: 21px;
     line-height: 29px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .buttonContainer {
     display: flex;
     gap: 12px;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .aboutSection {

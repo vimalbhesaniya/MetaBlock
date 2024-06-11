@@ -24,6 +24,9 @@
     .featuresContainer{
         flex-direction: column !important;
     }
+    .introDescription{
+        width: 95%;
+    }
 }
 
 
