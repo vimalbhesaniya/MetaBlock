@@ -111,6 +111,7 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), #000);
     width: 100%;
     height: 131px;
+    backdrop-filter: blur(15px);
 }
 
 .bluryDiv2 {
@@ -355,4 +356,9 @@
     color: #515356;
     font-size: 22px;
 
+}
+
+.featureNextSection{
+    display: flex;
+    width: 100%;    
 }
