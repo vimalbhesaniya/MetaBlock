@@ -319,7 +319,7 @@
 .card3dcenter {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transform-style: preserve-3d;
     transition: transform 0.9s ease-in-out;
 }
@@ -357,9 +357,9 @@
     padding-left: 30px;
     background-repeat: no-repeat !important;
     background: transparent;
-    }
-    
-    .back {
+}
+
+.back {
     border-radius: 15px;
     transform: rotateY(180deg);
     background: transparent;
@@ -420,8 +420,15 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 600;
+    width: 70%;
     color: white;
     position: absolute;
     transform: translate3d(0px, 0px, 100px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.backPara {
+    font-size: 13px;
+    color: white;
+    width: 80%;
 }

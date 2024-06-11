@@ -35,7 +35,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-md-4 col-sm-6">
+                    <div className="col-lg-2 col-md-4 col-sm-6 my-3">
                         <div className="footer-box2">
                             <h5>Quick Links</h5>
                             <ul>
@@ -54,7 +54,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-3 col-sm-6">
+                    <div className="col-lg-4 col-md-3 col-sm-6 my-3">
                         <div className="footer-box2">
                             <h5>About</h5>
                             <ul>
@@ -67,7 +67,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-6">
+                    <div className="col-lg-2 col-md-3 col-sm-6 my-3 ">
                         <div className="footer-box2">
                             <button className="buttonToGoTop" onClick={()=>handler(s1)}>
                                 <svg className="svgIcon" viewBox="0 0 384 512">

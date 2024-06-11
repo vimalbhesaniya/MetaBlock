@@ -21,17 +21,45 @@ import fourFlip from "../../Components/Images/fourFlip.png"
 import five from "../../Components/Images/five.png"
 import fiveFlip from "../../Components/Images/fiveFlip.png"
 import AOS from "aos"
+import svg1 from "../../Components/SVG/1.svg"
+import svg2 from "../../Components/SVG/2.svg"
+import svg3 from "../../Components/SVG/3.svg"
+import svg4 from "../../Components/SVG/4.svg"
+import svg5 from "../../Components/SVG/5.svg"
+import svg6 from "../../Components/SVG/6.svg"
+import svg7 from "../../Components/SVG/7.png"
+import svg8 from "../../Components/SVG/8.svg"
+import svg9 from "../../Components/SVG/9.png"
+import svg10 from "../../Components/SVG/10.png"
+
 const Home = () => {
     const [s1, s2, s3, s4, s5] = useContext(Navigater);
-    useEffect(()=>{
-        AOS.init({duration:2000});
-    } , [])
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
+
+    const data1 = [
+        svg1,
+        svg2,
+        svg3,
+        svg4,
+        svg5
+    ];
+    const data2 = [
+        svg6,
+        svg7,
+        svg8,
+        svg9,
+        svg10
+    ]
+
+
     return (
         <>
             <section ref={s1} className="introSection">
                 <div className="contentContainer">
-                    <h4 className="introTitle">INTRODUCING</h4>
-                    <h1 className="introHeading">MetaBlock</h1>
+                    <h4 className="introTitle" data-aos="zoom-in-up">INTRODUCING</h4>
+                    <h1 className="introHeading" data-aos='zoom-in-up'>MetaBlock</h1>
                     <p className="introDescription ">
                         "Horixon " is an expansive gaming metaverse that
                         seamlessly integrates augmented reality (AR), virtual
@@ -76,12 +104,12 @@ const Home = () => {
                 </div>
                 {(
                     <div className="aboutRight">
-                        <p className="font aboutTitle">MetaBlock</p>
-                        <h1 className="aboutHeading mt-3">
+                        <p className="font aboutTitle" data-aos="fade-left">MetaBlock</p>
+                        <h1 className="aboutHeading mt-3" data-aos="fade-left">
                             Revolutionizes Arbitrage With Decentralized Flash
                             Loans And Innovative Staking Opportunities
                         </h1>
-                        <p className="aboutDescription mt-3 paraFont">
+                        <p className="aboutDescription mt-3 paraFont" data-aos="fade-left">
                             Embark on a journey through cutting-edge technology
                             with Horixon. In a world where artificial
                             intelligence, blockchain, and virtual reality
@@ -185,10 +213,10 @@ const Home = () => {
                     <div>
                         {(
                             <>
-                                <h3 className="subHeading">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Aura Wallet
                                 </h3>
-                                <p className="font subDesc">
+                                <p className="font subDesc" data-aos="fade-left">
                                     Securely manage your cryptocurrency assets
                                     with Aura Wallet, offering a user-friendly
                                     interface and advanced security features for
@@ -201,10 +229,10 @@ const Home = () => {
                     <div>
                         {(
                             <>
-                                <h3 className="subHeading">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Alien Aura Battle Game
                                 </h3>
-                                <p className="font subDesc">
+                                <p className="font subDesc" data-aos="fade-left">
                                     Experience thrilling gameplay in the Alien
                                     Aura Battle Game, where players engage in
                                     strategic battles and earn rewards using
@@ -217,10 +245,10 @@ const Home = () => {
                     <div>
                         {(
                             <>
-                                <h3 className="subHeading">
+                                <h3 className="subHeading" data-aos="fade-left">
                                     Aura Chain
                                 </h3>
-                                <p className="font subDesc">
+                                <p className="font subDesc" data-aos="fade-left">
                                     Discover Aura Chain, a high-performance
                                     blockchain network designed for scalability,
                                     security, and interoperability, enabling
@@ -237,12 +265,73 @@ const Home = () => {
                 ref={s3}
                 id="roadmap"
             >
-                <h1 className="roadMapHeading text-center">Our RoadMap</h1>
+                <h1 className="roadMapHeading text-center" data-aos="zoom-in-up">Our RoadMap</h1>
                 <RoadMap key={"roadMap"} />
             </section>
             <section className="chartContainer appContainer">
                 <h1 className="roadMapHeading text-center">TOKENOMICS</h1>
                 <Chart />
+            </section>
+
+            <section className="featureHeader appContainer" ref={s5}>
+                <div className="headerLeft">
+                    <h5 className="header5 " data-aos= 'fade-right'> FEATURES IN</h5>
+
+                    <h2 className="header2" data-aos= 'fade-right'> METABLOCK</h2>
+                </div>
+                <div className="headerRight">
+                    <h2 className="rightHeader aboutHeading" data-aos= 'fade-left'>Navigating Tomorrow's Digital Frontiers with Versatile Solutions</h2>
+                    <p className="rightPara" data-aos= 'fade-left'>Explore Horixon, a multifaceted venture spearheading the future of technology. From immersive travel in Horixpanse to thrilling bets in Horixbet, groundbreaking innovation awaits. Join us on this transformative journey through the metaverse and beyond.
+                    </p>
+                </div>
+            </section>
+
+            <section className="featuresContainer appContainer">
+                <div className="featureLeft">
+                    <Card customClass={"card3d"}
+                        FrontPath={one}
+                        BackPath={oneFlip}
+                        FrontText={`HoriXpanse`}
+                        FrontText2={'Metasurfer VR Time Travel Adventures'}
+                        BackText={'Embark on a mind-bending journey with HoriXpanse, where futuristic technology meets historical exploration in the Metasurfer VR realm. Unleash the thrill of time travel adventures, experiencing the past like never before in a space where history and innovation collide.'}
+                    />
+                    <Card
+                        customClass={'card3d'}
+                        FrontPath={two}
+                        BackPath={twoFlip}
+                        FrontText={`HoriXBet`}
+                        FrontText2={'Metaverse Casinos'}
+                        BackText={'Dive into the exhilarating world of HoriXBet, where cutting-edge technology and blockchain innovation redefine the art of gambling. Experience metaverse casinos like never before, where luck meets sophistication, and every bet becomes a thrilling leap into the future.'}
+                    />
+                </div>
+                <div className="featureCenter">
+                    <Card
+                        customClass={"card3dcenter"}
+                        FrontPath={three}
+                        BackPath={threeFlip}
+                        FrontText={`HoriXlearn`}
+                        FrontText2={'The Futuristic Knowledge Hub'}
+                        BackText={'Embark on a mind-bending journey with HoriXpanse, where futuristic technology meets historical exploration in the Metasurfer VR realm. Unleash the thrill of time travel adventures, experiencing the past like never before in a space where history and innovation collide.'}
+                    />
+                </div>
+                <div className="featureRight">
+                    <Card
+                        customClass={"card3d"}
+                        FrontPath={four}
+                        BackPath={fourFlip}
+                        FrontText={`HoriXplore`}
+                        FrontText2={`Random Chat rooms`}
+                        BackText={`Step into the future of collaboration with HoriXphere, where virtual reality meets seamless teamwork. Experience a realm of immersive VR collaboration spaces, breaking the boundaries of traditional meetings and unleashing the potential of dynamic, interconnected digital workspaces.`}
+                    />
+                    <Card
+                        customClass={"card3d"}
+                        FrontPath={five}
+                        BackPath={fiveFlip}
+                        FrontText={`HoriXsphere`}
+                        FrontText2={`Co-working spaces`}
+                        BackText={'Ignite your curiosity with HoriXlearn, the beacon of futuristic education within the Horixon metaverse. Dive into an AI-powered knowledge hub, where learning transcends boundaries, and the synergy of advanced technology shapes a new era of interactive and immersive educational experiences.'}
+                    />
+                </div>
             </section>
             <section className="appContainer">
                 <h1 className="roadMapHeading text-center my-5">
@@ -259,47 +348,17 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="featuresContainer appContainer">
-                <div className="featureLeft">
-                    <Card customClass={"card3d"}
-                        FrontPath={one}
-                        BackPath={oneFlip}
-                    />
-                    <Card
-                        customClass={'card3d'}
-                        FrontPath={two}
-                        BackPath={twoFlip}
-                    />
-                </div>
-                <div className="featureCenter">
-                    <Card
-                        customClass={"card3dcenter"}
-                        FrontPath={three}
-                        BackPath={threeFlip}
-                    />
-                </div>
-                <div className="featureRight">
-                    <Card
-                        customClass={"card3d"}
-                        FrontPath={four}
-                        BackPath={fourFlip}
-                    />
-                    <Card
-                        customClass={"card3d"}
-                        FrontPath={five}
-                        BackPath={fiveFlip}
-                    />
-                </div>
-            </section>
-            <section className="roadMapContainer appContainer" ref={s4}>
-                <h1 className="roadMapHeading text-center">PARTNERS</h1>
-                <PartNers />
+
+            <section className="roadMapContainer appContainer my-5" ref={s4}>
+                <h1 className="roadMapHeading text-center" data-aos="zoom-in-up">PARTNERS</h1>
+                <PartNers array={data1} />
             </section>
             <section className="roadMapContainer appContainer">
-                <h1 className="roadMapHeading text-center">PARTNERS</h1>
-                <PartNers />
+                <h1 className="roadMapHeading text-center" data-aos="zoom-in-up">Stay Tuned For</h1>
+                <PartNers array={data2} />
             </section>
             <div className="container-fluid my-5">
+                <h1 className="roadMapHeading text-center">TEAM</h1>
                 <div className="line">
                     <ProfileCard></ProfileCard>
                 </div>

@@ -8,6 +8,10 @@
     max-width: 200px;   
 }
 
+.burgerIconContainer{
+    position: relative;
+    top: 10px;
+}
 .navLinkContainer{
     /* gap: 13px; */
 }

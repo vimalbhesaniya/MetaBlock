@@ -106,7 +106,7 @@ header nav {
     flex-direction: column !important;
     transition: all 1s;
     padding-left: 30px;
-    height: 400px;
+    height: 300px;
 }
 
 .hide {
@@ -287,4 +287,106 @@ header nav {
     /* transform: translateY(-30px); */
     transition-duration: 0.3s;
   }
+  
+
+  :root {
+    --hue: 223px;
+    --bg: hsl(var(--hue),90%,95%);
+    --fg: hsl(var(--hue),90%,5%);
+    --trans-dur: 0.3s;
+    font-size: calc(16px + (24px - 16px) * (690px - 320px) / (1280px - 320px));
+  }
+  
+  .body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font: 16px/1.5 sans-serif;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    transition: background-color var(--trans-dur);
+  }
+  
+  main {
+    padding: 24px 0;
+  }
+  
+  .ip {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .ip__track {
+    stroke: hsl(var(--hue),90%,90%);
+    transition: stroke var(--trans-dur);
+  }
+  
+  .ip__worm1,
+  .ip__worm2 {
+    animation: worm1 2s linear infinite;
+  }
+  
+  .ip__worm2 {
+    animation-name: worm2;
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),90%,5%);
+      --fg: hsl(var(--hue),90%,95%);
+    }
+  
+    .ip__track {
+      stroke: hsl(var(--hue),90%,15%);
+    }
+  }
+  
+  /* Animation */
+  @keyframes worm1 {
+    from {
+      stroke-dashoffset: 0;
+    }
+  
+    50% {
+      animation-timing-function: steps(1);
+      stroke-dashoffset: -358;
+    }
+  
+    50.01% {
+      animation-timing-function: linear;
+      stroke-dashoffset: 358;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes worm2 {
+    from {
+      stroke-dashoffset: 358;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+    }
+  
+    to {
+      stroke-dashoffset: -358;
+    }
+  }
+
+  .mainLoader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: black;
+    z-index: 100000000000000000000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
   

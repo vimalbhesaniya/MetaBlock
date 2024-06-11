@@ -36,7 +36,7 @@
     position: absolute;
     z-index: 123;
     display: flex;
-    margin-top: 130px;
+    margin-top: 70px;
     flex-direction: column;
     align-items: center;
 }
@@ -208,6 +208,7 @@
 .roadMapContainer {
     width: 100%;
     padding-bottom: 100px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,9 +290,9 @@
 
 .featuresContainer {
     width: 100%;
-     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .featureLeft {
@@ -299,12 +300,60 @@
 }
 
 .featureCenter {
-    display: flex;
     width: 100%;
-    
-    height: 100%;
+
+
 }
 
 .featureRight {
     width: 100%;
+}
+
+.featureHeader {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header5 {
+    font-size: 17px;
+    color: rgb(121, 121, 121) !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.header2 {
+    font-family: 'borned';
+    font-size: 17px;
+    
+    color: white;
+}
+
+.headerLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.headerRight {
+    width: 50%;
+    color: white;
+    font-size: 36px;
+
+}
+
+.rightHeader {
+    font-size: 37px;
+    font-family: 'borned';
+}
+
+.rightPara {
+    color: #515356;
+    font-size: 22px;
+
 }

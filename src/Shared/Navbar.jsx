@@ -20,7 +20,7 @@ const Navbar = () => {
                             <Link  to={''} className='navLink' onClick={()=> handler(s1)}>Home</Link>
                         </div>
                         <div className='navLinkItem'>
-                            <Link to={''} className='navLink' onClick={()=> handler(s2)} >Features</Link>
+                            <Link to={''} className='navLink' onClick={()=> handler(s5)} >Features</Link>
                         </div>
                         <div className='navLinkItem'>
                             <Link to={''} className='navLink' onClick={()=> handler(s3)}>RoadMap</Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
                             <Link  to={''} className='navLink' onClick={()=> handler(s1)}>Home</Link>
                         </div>
                         <div className='navLinkItem'>
-                            <Link to={''} className='navLink' onClick={()=> handler(s2)} >Features</Link>
+                            <Link to={''} className='navLink' onClick={()=> handler(s5)} >Features</Link>
                         </div>
                         <div className='navLinkItem'>
                             <Link to={''} className='navLink' onClick={()=> handler(s3)}>RoadMap</Link>

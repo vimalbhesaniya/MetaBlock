@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-const Card = ({customClass, BackPath , FrontPath}) => {
+const Card = ({customClass, BackPath , FrontPath , FrontText ,BackText ,FrontText2 }) => {
     return (
         <>
             <div className="parent">
@@ -9,11 +9,11 @@ const Card = ({customClass, BackPath , FrontPath}) => {
 
                     </div>
                     <div className="date-box">
-                        <p className="fronPara">HoriXpanse <br /> Metasurfer VR Time Travel Adventures </p>
+                        <p className="fronPara">{FrontText} <br /> {FrontText2}</p>
                     </div>
                     <div className={`content-box back`} style={{background:`url(${BackPath})`}}>
                     <div className="date-box ">
-                        <p className="fronPara">HoriXpanse <br /> Metasurfer VR Time Travel Adventures </p>
+                        <p className="backPara">{BackText}</p>
                     </div>
                     </div>
                 </div>

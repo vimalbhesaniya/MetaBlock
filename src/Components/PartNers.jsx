@@ -9,19 +9,14 @@ import svg3 from "./SVG/3.svg"
 import svg4 from "./SVG/4.svg"
 import svg5 from "./SVG/5.svg"
 
-const data = [
-    svg1,
-    svg2,
-    svg3,
-    svg4,
-    svg5
-];
 
-const PartNers = () => {
+
+
+const PartNers = ({array}) => {
     const [sliderRef, setSliderRef] = useState(null);
 
     const sliderSettings = {
-        speed: 1500,
+        speed: 2500,
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
@@ -62,7 +57,7 @@ const PartNers = () => {
         <>
             <div className='container-fluid pt-5'>
                     <Slider {...sliderSettings} ref={setSliderRef}>
-                        {data.map((img , i) => (
+                        {array?.map((img , i) => (
                                     <div key={i}  className='cardMainContainer h-100'>
                                         <img src={img} className='img-fluid' alt="" />
                                     </div>

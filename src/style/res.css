@@ -10,10 +10,19 @@
     }
 
     .productContainer {
-        padding: 20px 50px ;
+        padding: 20px 0px ;
     }
     .introHeading{
+        font-size: 35px;
+    }
+    .introTitle{
         font-size: 20px;
+    }
+    .card3dcenter{
+        height: 400px;
+    }
+    .featuresContainer{
+        flex-direction: column !important;
     }
 }
 
@@ -41,12 +50,16 @@
     }  
 }
 @media (max-width : 1050px) {
-    .aboutLeft , .aboutRight  ,.stakeLeft , .stakeRight  ,stakeLeft{
+    .aboutLeft , .aboutRight  ,.stakeLeft , .stakeRight  ,.stakeLeft{
         flex: 0 1 100% !important;
         width: 100%;
         max-width: 100%;
         text-align: center;
         align-items: center;
+    }
+    .headerRight , .headerLeft{
+        width: 100%;
+        text-align: center;
     }
     .aboutDescription{
         text-align: center;

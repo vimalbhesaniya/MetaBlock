@@ -35,6 +35,7 @@ const ProfileCard = () => {
     ]);
     return (
         <>
+            
             {profileData?.map((val, ind) => {
                 return (
                     <div className="main-box" key={ind}>
