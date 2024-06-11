@@ -60,6 +60,9 @@
         text-align: center;
         align-items: center;
     }
+    .featureNextSection{
+        flex-wrap: wrap;
+    }
     .headerRight , .headerLeft{
         width: 100%;
         text-align: center;
