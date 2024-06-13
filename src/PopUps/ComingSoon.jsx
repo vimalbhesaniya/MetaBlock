@@ -17,6 +17,7 @@ const Body = () => {
         <>
             <div className="comingSoonCard" data-aos='zoom-in'>
                 <div className="cardLogoContainer">
+                <button className='closeButton' onClick={()=>setModal('')}>❌</button>
                     <img src={logo} alt="" />
                     <h1 className="comingSoonTitle">STAKING</h1>
                     <Button

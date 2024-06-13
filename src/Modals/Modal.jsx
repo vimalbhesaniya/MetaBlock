@@ -16,7 +16,7 @@ const Modal = ({Body , onclose}) => {
     }, [openTable]);
   return (
     <div className='modalContainer' ref={openTable}>
-        <button className='closeButton' onClick={onclose}>❌</button>
+        
         <Body />
     </div>
   )
