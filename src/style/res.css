@@ -36,9 +36,6 @@
 }
 
 @media (max-width : 400px) {
-    .introHeading{
-        font-size: 40px;
-    }
     .realityHeading {
         font-size: 40px;
     }
@@ -91,12 +88,20 @@
         width: 90%;
         max-width: 867px;
     }  
-
+    .introHeading{
+        font-size: 100px;
+    }
     .buttonContainerForPhases{
         justify-content: space-between;
     }
 
     .aboutHeading {
         font-size: 28px;
+    }
+}
+
+@media (max-width : 500px) {
+    .introHeading{
+        font-size: 40px;
     }
 }

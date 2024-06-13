@@ -1,0 +1,29 @@
+.comingSoonCard {
+    width: 100%;
+    max-width: 400px;
+    background-color: black;
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.319));
+    height: auto;
+    padding: 30px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: start;
+    
+    justify-content: center;
+
+}
+
+.cardLogoContainer {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.comingSoonTitle {
+    font-family: "borned";
+    font-size: 22px;
+    color: white;
+}

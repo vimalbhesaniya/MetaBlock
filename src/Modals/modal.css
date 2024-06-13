@@ -1,0 +1,46 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    background-color: rgba(15, 9, 32, 0.777);
+    width: 100%;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modalContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.closeButton {
+    background: transparent;
+
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+}
+
+
+.closeButton:hover {
+    animation: rotete .5s forwards;
+}
+
+@keyframes rotete {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
