@@ -395,3 +395,10 @@ header nav {
     display: flex;
 }
   
+
+.no-scroll{
+    overflow: hidden;
+}
+.no-scroll::-webkit-scrollbar{
+    display: none;
+}

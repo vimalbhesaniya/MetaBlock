@@ -36,6 +36,7 @@ import RenderModal from "../../Modals/RenderModal";
 import { whichModal } from "../../main";
 
 const Home = () => {
+    
     const [s1, s2, s3, s4, s5] = useContext(Navigater);
     const [modal, setModal] = useContext(whichModal);
     useEffect(() => {
