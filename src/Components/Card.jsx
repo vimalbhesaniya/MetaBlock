@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css"
 import Button from './Button'
 
-const Card = ({ visible = false , customClass, BackPath , FrontPath , FrontText ,BackText ,FrontText2 }) => {
+const Card = ({path  ,  text , visible = false , customClass, BackPath , FrontPath , FrontText ,BackText ,FrontText2 }) => {
     return (
         <>
             <div className="parent">
@@ -16,7 +16,7 @@ const Card = ({ visible = false , customClass, BackPath , FrontPath , FrontText 
                     <div className={`content-box back`} style={{background:`url(${BackPath})`}}>
                     <div className="date-box ">
                         <p className="backPara">{BackText}</p>
-                        {!visible&&<Button Text={"EXPLORE"}></Button>}
+                        {!visible&&<Button Text={text}></Button>}
                     </div>
                     </div>
                 </div>

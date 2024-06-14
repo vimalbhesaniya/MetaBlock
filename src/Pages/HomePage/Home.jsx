@@ -357,8 +357,9 @@ const Home = () => {
                     <Card
                         customClass={"card3d"}
                         FrontPath={one}
+                        text={'EXPLORE'}
                         BackPath={oneFlip}
-                        visible={true}
+                        
                         FrontText={`HoriXpanse`}
                         FrontText2={"Metasurfer VR Time Travel Adventures"}
                         BackText={
@@ -368,6 +369,7 @@ const Home = () => {
                     <Card
                         customClass={"card3d"}
                         FrontPath={two}
+                        text={'COMING SOON'}
                         BackPath={twoFlip}
                         FrontText={`HoriXBet`}
                         FrontText2={"Metaverse Casinos"}
@@ -380,6 +382,7 @@ const Home = () => {
                     <Card
                         customClass={"card3dcenter"}
                         FrontPath={three}
+                        text={'COMING SOON'}
                         BackPath={threeFlip}
                         FrontText={`HoriXlearn`}
                         FrontText2={"The Futuristic Knowledge Hub"}
@@ -395,18 +398,20 @@ const Home = () => {
                         BackPath={fourFlip}
                         FrontText={`HoriXplore`}
                         FrontText2={`Random Chat rooms`}
+                        text={'COMING SOON'}
                         BackText={`Step into the future of collaboration with HoriXphere, where virtual reality meets seamless teamwork. Experience a realm of immersive VR collaboration spaces, breaking the boundaries of traditional meetings and unleashing the potential of dynamic, interconnected digital workspaces.`}
-                    />
+                        />
                     <Card
                         customClass={"card3d"}
                         FrontPath={five}
                         BackPath={fiveFlip}
                         FrontText={`HoriXsphere`}
                         FrontText2={`Co-working spaces`}
+                        text={'COMING SOON'}
                         BackText={
                             "Ignite your curiosity with HoriXlearn, the beacon of futuristic education within the Horixon metaverse. Dive into an AI-powered knowledge hub, where learning transcends boundaries, and the synergy of advanced technology shapes a new era of interactive and immersive educational experiences."
                         }
-                    />
+                        />
                 </div>
             </section>
             <section className="featuresContainer appContainer">
@@ -416,6 +421,7 @@ const Home = () => {
                         FrontPath={four}
                         BackPath={fourFlip}
                         FrontText={`HoriXplore`}
+                        text={'COMING SOON'}
                         FrontText2={`Random Chat rooms`}
                         BackText={`Step into the future of collaboration with HoriXphere, where virtual reality meets seamless teamwork. Experience a realm of immersive VR collaboration spaces, breaking the boundaries of traditional meetings and unleashing the potential of dynamic, interconnected digital workspaces.`}
                     />
@@ -425,8 +431,20 @@ const Home = () => {
                         BackPath={fiveFlip}
                         FrontText={`HoriXsphere`}
                         FrontText2={`Co-working spaces`}
+                        text={'COMING SOON'}
                         BackText={
                             "Ignite your curiosity with HoriXlearn, the beacon of futuristic education within the Horixon metaverse. Dive into an AI-powered knowledge hub, where learning transcends boundaries, and the synergy of advanced technology shapes a new era of interactive and immersive educational experiences."
+                        }
+                        />
+                        <Card
+                        customClass={"card3d"}
+                        FrontPath={two}
+                        text={'COMING SOON'}
+                        BackPath={twoFlip}
+                        FrontText={`HoriXBet`}
+                        FrontText2={"Metaverse Casinos"}
+                        BackText={
+                            "Dive into the exhilarating world of HoriXBet, where cutting-edge technology and blockchain innovation redefine the art of gambling. Experience metaverse casinos like never before, where luck meets sophistication, and every bet becomes a thrilling leap into the future."
                         }
                     />
                 </div>

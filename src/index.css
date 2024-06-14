@@ -122,6 +122,11 @@ header nav {
 
 }
 
+.button a{
+    color: white;
+    text-decoration: none;    
+}
+
 .button {
     --border-color: linear-gradient(-45deg, #21f012, #03a5aa, #006eff);
     --border-width: 0.125em;
