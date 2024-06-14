@@ -21,6 +21,7 @@ import fourFlip from "../../Components/Images/fourFlip.png";
 import five from "../../Components/Images/five.png";
 import fiveFlip from "../../Components/Images/fiveFlip.png";
 import AOS from "aos";
+import newImage from "../../assets/new.jpg"
 import svg1 from "../../Components/SVG/1.svg";
 import svg2 from "../../Components/SVG/2.svg";
 import svg3 from "../../Components/SVG/3.svg";
@@ -99,19 +100,7 @@ const Home = () => {
                 <div className="aboutLeft">
                     <div className="bluryDiv1"></div>
                     <div className="bluryDiv2"></div>
-                    <video
-                        width="600"
-                        autoPlay
-                        loop
-                        muted
-                        controls={false}
-                        className="aboutVideo"
-                    >
-                        <source
-                            src="Videos/surfer-7rYpoIub.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
+                    <img src={newImage}  className="img-fluid" alt="" />
                 </div>
                 {
                     <div className="aboutRight">
