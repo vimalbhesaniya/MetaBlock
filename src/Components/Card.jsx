@@ -16,7 +16,7 @@ const Card = ({path  ,  text , visible = false , customClass, BackPath , FrontPa
                     <div className={`content-box back`} style={{background:`url(${BackPath})`}}>
                     <div className="date-box ">
                         <p className="backPara">{BackText}</p>
-                        {!visible&&<Button Text={text}></Button>}
+                        {!visible&&<Button Text={text} path={path}></Button>}
                     </div>
                     </div>
                 </div>
