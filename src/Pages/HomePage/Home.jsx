@@ -358,6 +358,7 @@ const Home = () => {
                         customClass={"card3d"}
                         FrontPath={one}
                         BackPath={oneFlip}
+                        visible={true}
                         FrontText={`HoriXpanse`}
                         FrontText2={"Metasurfer VR Time Travel Adventures"}
                         BackText={
