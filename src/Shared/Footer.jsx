@@ -59,10 +59,13 @@ const Footer = () => {
                             <h5>About</h5>
                             <ul>
                                 <li>
-                                    <Link>Tokens</Link>
+                                    <Link to={'#'}>Privacy Policy</Link>
                                 </li>
                                 <li>
-                                    <Link>Blogs</Link>
+                                    <Link to={'#'}>Terms & Condition</Link>
+                                </li>
+                                <li>
+                                    <Link to={'#'}>Policy& procedure</Link>
                                 </li>
                             </ul>
                         </div>
