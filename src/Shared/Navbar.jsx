@@ -26,13 +26,13 @@ const Navbar = () => {
                             <Link to={''} className='navLink' onClick={()=> handler(s3)}>RoadMap</Link>
                         </div>
                         <div className='navLinkItem'>
-                            <Link to={''} className='navLink' onClick={()=> handler(s4)}>Contact</Link>
+                            <Link to={'https://www.telegram.org'} className='navLink'>Contact</Link>
                         </div>
                         <div className='navLinkItem'>
-                            <Link to={''} className='navLink'>Login</Link>
+                            <Link to={'https://www.google.com'} className='navLink'>Login</Link>
                         </div>
                         <div className='navLinkItem'>
-                            <Link to={''} className='navLink'>Register</Link>
+                            <Link to={'https://www.youtube.com'} className='navLink'>Register</Link>
                         </div>
                     </div>
                 </nav>
