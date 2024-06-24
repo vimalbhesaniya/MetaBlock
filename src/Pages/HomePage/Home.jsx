@@ -108,7 +108,7 @@ const Home = () => {
                             MetaBlock
                         </p>
                         <h1 className="aboutHeading mt-3" data-aos="fade-left">
-                            Revolutionizes Arbitrage With Decentralized Flash
+                            Revolutionizes Arbitra With Decentralized Flash
                             Loans And Innovative Staking Opportunities
                         </h1>
                         <p
